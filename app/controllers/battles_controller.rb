@@ -18,7 +18,6 @@ class BattlesController < ApplicationController
 
     winning_post.update(wins: winning_post.wins + 1)
     losing_post.update(losses: winning_post.losses + 1)
-    binding.pry
 
     redirect_to battles_path
   end
